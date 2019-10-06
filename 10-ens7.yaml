@@ -1,0 +1,10 @@
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    ens7:
+      match:
+        macaddress: 5a:00:01:7e:19:6c
+      mtu: 1450
+      dhcp4: no
+      addresses: [10.1.96.3/20]
